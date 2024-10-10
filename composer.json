@@ -1,0 +1,18 @@
+{
+    "name": "kang-babi/ph-zip-codes",
+    "description": "PHP-based Philippine Zip Codes Mapping",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KangBabi\\PhZipCodes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joshua Benosa",
+            "email": "joshuabuban.benosa@bicol-u.edu.ph"
+        }
+    ],
+    "require": {}
+}
