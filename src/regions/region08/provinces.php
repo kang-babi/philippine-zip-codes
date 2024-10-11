@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "BILIRAN", "municipality" => "Almeria", "zip_code" => "6544"],
   ["province" => "BILIRAN", "municipality" => "Biliran", "zip_code" => "6549"],
   ["province" => "BILIRAN", "municipality" => "Cabucgayan", "zip_code" => "6550"],
@@ -148,4 +148,4 @@ return array_map('trim', [
   ["province" => "WESTERN SAMAR", "municipality" => "Villareal", "zip_code" => "6717"],
   ["province" => "WESTERN SAMAR", "municipality" => "Wright", "zip_code" => "6703"],
   ["province" => "WESTERN SAMAR", "municipality" => "Zumarraga", "zip_code" => "6725"],
-]);
+];

@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "BOHOL", "municipality" => "Alburquerque", "zip_code" => "6302"],
   ["province" => "BOHOL", "municipality" => "Alicia", "zip_code" => "6314"],
   ["province" => "BOHOL", "municipality" => "Anda", "zip_code" => "6311"],
@@ -136,4 +136,4 @@ return array_map('trim', [
   ["province" => "SIQUIJOR", "municipality" => "Maria", "zip_code" => "6229"],
   ["province" => "SIQUIJOR", "municipality" => "San Juan", "zip_code" => "6227"],
   ["province" => "SIQUIJOR", "municipality" => "Siquijor    ", "zip_code" => "6225"],
-]);
+];

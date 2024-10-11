@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "MANILA", "municipality" => "Binondo", "zip_code" => "1006"],
   ["province" => "MANILA", "municipality" => "Intramuros", "zip_code" => "1002"],
   ["province" => "MANILA", "municipality" => "Malate", "zip_code" => "1004"],
@@ -381,4 +381,4 @@ return array_map('trim', [
   ["province" => "VALENZUELA CITY", "municipality" => "Mapulang Lupa", "zip_code" => "1448"],
   ["province" => "VALENZUELA CITY", "municipality" => "Valenzuela CPO - Malinta", "zip_code" => "1440"],
   ["province" => "VALENZUELA CITY", "municipality" => "Valenzuela P.O. Boxes", "zip_code" => "1469"],
-]);
+];

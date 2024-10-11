@@ -8,26 +8,25 @@ class PhZipCode
 
   public function __construct()
   {
-    # recursively include all region data.php files
-    $this->regions = array_merge(
-      include __DIR__ . '/region01',
-      include __DIR__ . '/region02',
-      include __DIR__ . '/region03',
-      include __DIR__ . '/region04a',
-      include __DIR__ . '/region04b',
-      include __DIR__ . '/region05',
-      include __DIR__ . '/region06',
-      include __DIR__ . '/region07',
-      include __DIR__ . '/region08',
-      include __DIR__ . '/region09',
-      include __DIR__ . '/region10',
-      include __DIR__ . '/region11',
-      include __DIR__ . '/region12',
-      include __DIR__ . '/region13',
-      include __DIR__ . '/region14',
-      include __DIR__ . '/region15',
-      include __DIR__ . '/regionncr',
-    );
+    $this->regions =  [
+      include __DIR__ . '/regions/regionncr/data.php',
+      include __DIR__ . '/regions/region01/data.php',
+      include __DIR__ . '/regions/region02/data.php',
+      include __DIR__ . '/regions/region03/data.php',
+      include __DIR__ . '/regions/region04a/data.php',
+      include __DIR__ . '/regions/region04b/data.php',
+      include __DIR__ . '/regions/region05/data.php',
+      include __DIR__ . '/regions/region06/data.php',
+      include __DIR__ . '/regions/region07/data.php',
+      include __DIR__ . '/regions/region08/data.php',
+      include __DIR__ . '/regions/region09/data.php',
+      include __DIR__ . '/regions/region10/data.php',
+      include __DIR__ . '/regions/region11/data.php',
+      include __DIR__ . '/regions/region12/data.php',
+      include __DIR__ . '/regions/region13/data.php',
+      include __DIR__ . '/regions/region14/data.php',
+      include __DIR__ . '/regions/region15/data.php',
+    ];
   }
   public static function getRegions()
   {

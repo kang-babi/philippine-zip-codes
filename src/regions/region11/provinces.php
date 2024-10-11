@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "COMPOSTELA VALLEY", "municipality" => "Compostela", "zip_code" => "8803"],
   ["province" => "COMPOSTELA VALLEY", "municipality" => "Laak (formerly San Vicente)", "zip_code" => "8810"],
   ["province" => "COMPOSTELA VALLEY", "municipality" => "Mabini", "zip_code" => "8807"],
@@ -66,4 +66,4 @@ return array_map('trim', [
   ["province" => "DAVAO ORIENTAL", "municipality" => "Mati", "zip_code" => "8200"],
   ["province" => "DAVAO ORIENTAL", "municipality" => "San Isidro", "zip_code" => "8209"],
   ["province" => "DAVAO ORIENTAL", "municipality" => "Tarragona", "zip_code" => "8201"],
-]);
+];

@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "ZAMBOANGA DEL NORTE", "municipality" => "Baliguian", "zip_code" => "7123"],
   ["province" => "ZAMBOANGA DEL NORTE", "municipality" => "Dapitan City", "zip_code" => "7101"],
   ["province" => "ZAMBOANGA DEL NORTE", "municipality" => "Dipolog City", "zip_code" => "7100"],
@@ -73,4 +73,4 @@ return array_map('trim', [
   ["province" => "ZAMBOANGA SIBUGAY", "municipality" => "Talusan", "zip_code" => "7012"],
   ["province" => "ZAMBOANGA SIBUGAY", "municipality" => "Titay", "zip_code" => "7003"],
   ["province" => "ZAMBOANGA SIBUGAY", "municipality" => "Tungawan", "zip_code" => "7018"],
-]);
+];

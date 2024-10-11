@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "ABRA", "municipality" => "Bangued", "zip_code" => "2800"],
   ["province" => "ABRA", "municipality" => "Boliney", "zip_code" => "2815"],
   ["province" => "ABRA", "municipality" => "Bucloc", "zip_code" => "2817"],
@@ -83,4 +83,4 @@ return array_map('trim', [
   ["province" => "MOUNTAIN PROVINCE", "municipality" => "Sadanga", "zip_code" => "2617"],
   ["province" => "MOUNTAIN PROVINCE", "municipality" => "Sagada", "zip_code" => "2619"],
   ["province" => "MOUNTAIN PROVINCE", "municipality" => "Tadian", "zip_code" => "2620"],
-]);
+];

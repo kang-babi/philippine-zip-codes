@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "NORTH COTABATO", "municipality" => "Alamada", "zip_code" => "9413"],
   ["province" => "NORTH COTABATO", "municipality" => "Aleosan", "zip_code" => "9415"],
   ["province" => "NORTH COTABATO", "municipality" => "Antipas", "zip_code" => "9414"],
@@ -52,4 +52,4 @@ return array_map('trim', [
   ["province" => "SULTAN KUDARAT", "municipality" => "Pres. Quirino", "zip_code" => "9804"],
   ["province" => "SULTAN KUDARAT", "municipality" => "Sen. Ninoy Aquino", "zip_code" => "9811"],
   ["province" => "SULTAN KUDARAT", "municipality" => "Tacurong", "zip_code" => "9800"],
-]);
+];

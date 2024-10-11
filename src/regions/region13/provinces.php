@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "AGUSAN DEL NORTE", "municipality" => "AGUSAN DEL NORTE", "zip_code" => ""],
   ["province" => "AGUSAN DEL NORTE", "municipality" => "Buenavista", "zip_code" => "8601"],
   ["province" => "AGUSAN DEL NORTE", "municipality" => "Butuan City", "zip_code" => "8600"],
@@ -79,4 +79,4 @@ return array_map('trim', [
   ["province" => "SURIGAO DEL SUR", "municipality" => "Tagbina", "zip_code" => "8308"],
   ["province" => "SURIGAO DEL SUR", "municipality" => "Tago", "zip_code" => "8302"],
   ["province" => "SURIGAO DEL SUR", "municipality" => "Tandag", "zip_code" => "8300"],
-]);
+];

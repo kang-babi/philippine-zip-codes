@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "BASILAN", "municipality" => "Akbar", "zip_code" => "7307"],
   ["province" => "BASILAN", "municipality" => "Al-Barka", "zip_code" => "7308"],
   ["province" => "BASILAN", "municipality" => "Hadji Mohammad Ajul", "zip_code" => "7309"],
@@ -126,4 +126,4 @@ return array_map('trim', [
   ["province" => "TAWI-TAWI", "municipality" => "South Ubian", "zip_code" => "7504"],
   ["province" => "TAWI-TAWI", "municipality" => "Turtle Island (Taganak)", "zip_code" => "7507"],
   ["province" => "TAWI-TAWI", "municipality" => "Tandu Bas", "zip_code" => "7502"],
-]);
+];

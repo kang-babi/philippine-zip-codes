@@ -1,5 +1,5 @@
 <?php
-return array_map('trim', [
+return  [
   ["province" => "BUKIDNON", "municipality" => "Baungon", "zip_code" => "8707"],
   ["province" => "BUKIDNON", "municipality" => "Cabanglasan", "zip_code" => "8723"],
   ["province" => "BUKIDNON", "municipality" => "Damulog", "zip_code" => "8721"],
@@ -99,4 +99,4 @@ return array_map('trim', [
   ["province" => "MISAMIS ORIENTAL", "municipality" => "Tagoloan", "zip_code" => "9001"],
   ["province" => "MISAMIS ORIENTAL", "municipality" => "Talisayan", "zip_code" => "9012"],
   ["province" => "MISAMIS ORIENTAL", "municipality" => "Villanueva", "zip_code" => "9002"],
-]);
+];
