@@ -1,7 +1,7 @@
 <?php
 return [
-  'region' => 'REGION 14',
-  'region_alt' => 'REGION XIV',
-  'name' => 'CAR',
+  'region' => 'CAR',
+  'region_alt' => 'CAR',
+  'name' => 'Cordillera Administrative Region',
   'provinces' => include __DIR__ . '/provinces.php',
 ];

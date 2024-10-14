@@ -1,7 +1,7 @@
 <?php
 return [
-  'region' => 'REGION 15',
-  'region_alt' => 'REGION XV',
-  'name' => 'BARMM',
+  'region' => 'BARMM',
+  'region_alt' => 'BARMM',
+  'name' => 'Bangsamoro Autonomous Region in Muslim Mindanao',
   'provinces' => include __DIR__ . '/provinces.php',
 ];
