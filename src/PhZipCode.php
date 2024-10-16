@@ -2,6 +2,11 @@
 
 namespace KangBabi\PhZipCodes;
 
+function u($string)
+{
+  return strtoupper($string);
+}
+
 class PhZipCode
 {
   public $regions;
@@ -29,24 +34,19 @@ class PhZipCode
     ];
   }
 
-  public function u($string)
-  {
-    return strtoupper($string);
-  }
-
   public function getZipCodes()
   {
     return array_map(function ($region) {
       return [
-        'region' => $this->u($region['region']),
-        'region_alt' => $this->u($region['region_alt']),
-        'name' => $this->u($region['name']),
+        'region' => u($region['region']),
+        'region_alt' => u($region['region_alt']),
+        'name' => u($region['name']),
         'provinces' => array_map(function ($province) use ($region) {
           return [
-            'region' => $this->u($region['region']),
-            'province' => $this->u($province['province']),
-            'municipality' => $this->u($province['municipality']),
-            'address' => $this->u(implode(', ', [
+            'region' => u($region['region']),
+            'province' => u($province['province']),
+            'municipality' => u($province['municipality']),
+            'address' => u(implode(', ', [
               $region['region'],
               $province['province'],
               $province['municipality'],
@@ -58,21 +58,25 @@ class PhZipCode
     }, $this->regions);
   }
 
-  public function getZipCodesList()
+  public function getZipCodesList(?bool $hasBarangay = false)
   {
     return array_merge(
-      ...array_map(function ($region) {
-        return array_map(function ($province) use ($region) {
+      ...array_map(function ($region) use ($hasBarangay) {
+        return array_map(function ($province) use ($region, $hasBarangay) {
           return [
-            'region' => $this->u($region['region']) . '(' . $this->u($region['name']) . ')',
-            'province' => $this->u($province['province']),
-            'municipality' => $this->u($province['municipality']),
-            'address' => $this->u(implode(', ', [
-              $region['region'],
-              $province['province'],
-              $province['municipality'],
-            ])),
+            'region' => u($region['region']) . ' (' . u($region['name']) . ')',
+            'province' => u($province['province']),
+            'municipality' => u($province['municipality']),
+            'address' => u(
+              implode(', ', [
+                $region['region'],
+                $province['province'],
+                $province['municipality'],
+              ])
+            ),
             'zip_code' => $province['zip_code'],
+            # optional key for barangay
+            'barangays' => $hasBarangay ? (array_key_exists('barangays', $province) ? $province['barangays'] : []) : [],
           ];
         }, $region['provinces']);
       }, $this->regions)
@@ -83,9 +87,9 @@ class PhZipCode
   {
     return array_map(function ($region) {
       return [
-        'region' => $this->u($region['region']),
-        'region_alt' => $this->u($region['region_alt']),
-        'name' => $this->u($region['name']),
+        'region' => u($region['region']),
+        'region_alt' => u($region['region_alt']),
+        'name' => u($region['name']),
       ];
     }, $this->regions);
   }
@@ -94,15 +98,15 @@ class PhZipCode
   {
     return array_merge(
       ...array_filter($this->getZipCodes(), function ($province) use ($region) {
-        $region = $this->u($region);
+        $region = u($region);
         [
           $province['region'],
           $province['region_alt'],
           $province['name']
         ] = [
-          $this->u($province['region']),
-          $this->u($province['region_alt']),
-          $this->u($province['name'])
+          u($province['region']),
+          u($province['region_alt']),
+          u($province['name'])
         ];
 
         return $province['region'] === $region || $province['region_alt'] === $region || $province['name'] === $region;
@@ -124,11 +128,80 @@ class PhZipCode
     if ($provinces = $this->getProvinces($region)) {
       return array_merge(
         array_filter($provinces, function ($item) use ($province) {
-          return $this->u($item['province']) === $this->u($province);
+          return u($item['province']) === u($province);
         })
       );
     }
 
     return [];
   }
+
+  public function getBarangays($region, $province, $municipality)
+  {
+    if ($provinces = $this->getMunicipalities($region, $province)) {
+      return array_merge(
+        ...array_map(
+          function ($municipality) {
+            return $municipality['barangays'];
+          },
+          array_filter(
+            $this->getZipCodesList(true),
+            function ($item) use ($municipality) {
+              return u($item['municipality']) === u($municipality);
+            }
+          )
+        )
+      );
+    }
+
+    return [];
+  }
+
+  public function getZipCode($zipCode)
+  {
+    return array_merge(
+      ...array_filter($this->getZipCodesList(true), function ($item) use ($zipCode) {
+        return u($item['zip_code']) === u($zipCode);
+      }) ?: []
+    );
+  }
+
+  // public function getAddressMap()
+  // {
+  //   // $data = $this->getZipCodesList(true);
+
+  //   // foreach ($data as $index => $d) {
+  //   //   print_r($d['barangays']);
+  //   //   // foreach ($d as $key => $value) {
+  //   //   //   // print_r($dd);
+  //   //   //   echo $key . ' => ';
+  //   //   //   print_r($value);
+
+  //   //   //   echo "\n";
+  //   //   // }
+
+  //   //   if ($index == 4) {
+  //   //     break;
+  //   //   }
+  //   // }
+
+  //   // return [];
+
+  //   print_r(array_merge_recursive(array_map(function ($municipality) {
+  //     return array_map(function ($barangay) use ($municipality) {
+  //       return [
+  //         'region' => $municipality['region'],
+  //         'province' => $municipality['province'],
+  //         'municipality' => $municipality['municipality'],
+  //         'barangay' => u($barangay),
+  //         'zip_code' => $municipality['zip_code'],
+  //         'address' => u(implode(', ', [$municipality['address'], $barangay . ' ' . $municipality['zip_code']]))
+  //       ];
+  //     }, $municipality['barangays']);
+  //   }, $this->getZipCodesList(true))));
+
+  //   // return array_map(function ($municipality) {
+  //   //   return [...array_keys($municipality)];
+  //   // }, $this->getZipCodesList(true)[0]);
+  // }
 }
