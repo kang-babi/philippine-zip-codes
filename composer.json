@@ -14,5 +14,7 @@
             "email": "joshuabuban.benosa@bicol-u.edu.ph"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/collections": "^11.28"
+    }
 }

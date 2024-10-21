@@ -10,6 +10,7 @@ function u($string)
 class PhZipCode
 {
   public $regions;
+  public $ncr;
 
   public function __construct()
   {
@@ -30,8 +31,10 @@ class PhZipCode
       include __DIR__ . '/regions/region13/data.php',
       include __DIR__ . '/regions/region14/data.php',
       include __DIR__ . '/regions/region15/data.php',
-      include __DIR__ . '/regions/regionncr/data.php',
+      # include __DIR__ . '/regions/regionncr/data.php',
     ];
+
+    $this->ncr = include __DIR__ . '/regions/regionncr/data.php';
   }
 
   public function getZipCodes()
@@ -55,7 +58,7 @@ class PhZipCode
           ];
         }, $region['provinces']),
       ];
-    }, $this->regions);
+    }, $this->regions + [$this->ncr]);
   }
 
   public function getZipCodesList(?bool $hasBarangay = false)
@@ -165,43 +168,4 @@ class PhZipCode
       }) ?: []
     );
   }
-
-  // public function getAddressMap()
-  // {
-  //   // $data = $this->getZipCodesList(true);
-
-  //   // foreach ($data as $index => $d) {
-  //   //   print_r($d['barangays']);
-  //   //   // foreach ($d as $key => $value) {
-  //   //   //   // print_r($dd);
-  //   //   //   echo $key . ' => ';
-  //   //   //   print_r($value);
-
-  //   //   //   echo "\n";
-  //   //   // }
-
-  //   //   if ($index == 4) {
-  //   //     break;
-  //   //   }
-  //   // }
-
-  //   // return [];
-
-  //   print_r(array_merge_recursive(array_map(function ($municipality) {
-  //     return array_map(function ($barangay) use ($municipality) {
-  //       return [
-  //         'region' => $municipality['region'],
-  //         'province' => $municipality['province'],
-  //         'municipality' => $municipality['municipality'],
-  //         'barangay' => u($barangay),
-  //         'zip_code' => $municipality['zip_code'],
-  //         'address' => u(implode(', ', [$municipality['address'], $barangay . ' ' . $municipality['zip_code']]))
-  //       ];
-  //     }, $municipality['barangays']);
-  //   }, $this->getZipCodesList(true))));
-
-  //   // return array_map(function ($municipality) {
-  //   //   return [...array_keys($municipality)];
-  //   // }, $this->getZipCodesList(true)[0]);
-  // }
 }
