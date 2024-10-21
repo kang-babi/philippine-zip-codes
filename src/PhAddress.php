@@ -42,7 +42,7 @@ class PhAddress extends Collection
     });
 
     $data = array_map(function ($region) {
-      return array_map(function ($province) use ($region) {
+      $region['provinces'] = array_map(function ($province) use ($region) {
         $province['address'] = implode(', ', [
           $region['region'],
           $province['province'],
@@ -51,6 +51,8 @@ class PhAddress extends Collection
 
         return $province;
       }, $region['provinces']);
+
+      return $region;
     }, $data);
 
     return $data;
@@ -129,7 +131,10 @@ class PhAddress extends Collection
   public static function regionsList(): static
   {
     return static::load()
-      ->map(fn($r) => "{$r['region']} ({$r['name']})");
+      ->map(fn($r) => [
+        'region' => $r['region'],
+        'name' => $r['name']
+      ]);
   }
 
   public static function provincesList(?string $region = ''): static
@@ -175,9 +180,9 @@ class PhAddress extends Collection
     return static::load();
   }
 
-  public static function region(?string $region = ""): static
+  public static function region(?string $region = ''): static
   {
-    if (trim($region) === "") {
+    if (trim($region) === '') {
       return static::regionsList();
     }
 
@@ -187,9 +192,9 @@ class PhAddress extends Collection
     return new static(static::$container);
   }
 
-  public static function province(?string $province = ""): static
+  public static function province(?string $province = ''): static
   {
-    if (trim($province) === "") {
+    if (trim($province) === '') {
       return new static(static::$container ? static::$container
         ->map(fn($r) => $r['provinces'])
         ->collapse()
@@ -206,9 +211,9 @@ class PhAddress extends Collection
     return new static(static::$container);
   }
 
-  public static function municipality(?string $municipality = ""): static
+  public static function municipality(?string $municipality = ''): static
   {
-    if (trim($municipality) === "") {
+    if (trim($municipality) === '') {
       return new static(static::$container ? static::$container
         ->pluck('municipality')
         ->unique() : []);
