@@ -17,7 +17,7 @@ A PHP library that provides a collection of zip codes and barangays in the Phili
   Returns a list of municipalities within the specified `$region` and `$province`. If `$municipality` is provided, it fetches data for that specific municipality within the given region and province.  
   **Note**: Calling `municipality` without specifying both `$region` and `$province` will return an empty result.
 - In the case of NCR, `zip_codes` in cities (in municipality(...) is a list of associative arrays where each entry maps the keys `zip_code` and `location` to their respective values.
-Sample:
+- Sample:
 ```
     # REGION
     $region = PhAddress::region() # returns list of regions
