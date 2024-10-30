@@ -35,7 +35,7 @@ return [
   ["province" => "BATANGAS", "municipality" => "Tingloy", "zip_code" => "4203", "barangays" => ["BARANGAY 13 (POBLACION 1)", "BARANGAY 14 (POBLACION 2)", "BARANGAY 15 (POBLACION 3)", "CORONA", "GAMAO", "MAKAWAYAN", "MARIKABAN", "PAPAYA", "PISA", "SAN ISIDRO", "SAN JOSE", "SAN JUAN", "SAN PEDRO", "SANTO TOMAS", "TALAHIB"]],
   ["province" => "BATANGAS", "municipality" => "Tuy", "zip_code" => "4214", "barangays" => ["ACLE", "BAYUDBUD", "BOLBOC", "BURGOS (POB.)", "DALIMA", "DAO", "GUINHAWA", "LUMBANGAN", "LUNA (POB.)", "LUNTAL", "MAGAHIS", "MALIBU", "MATAYWANAC", "PALINCARO", "PUTOL", "RILLO (POB.)", "RIZAL (POB.)", "SABANG", "SAN JOSE", "TALON", "TOONG", "TUYON-TUYON"]],
 
-  ["province" => "BATANGAS", "municipality" => "Fernando Airbase", "zip_code" => "4218", "barangays" => []],
+  # ["province" => "BATANGAS", "municipality" => "Fernando Airbase", "zip_code" => "4218", "barangays" => []],
 
   ["province" => "CAVITE", "municipality" => "Alfonso", "zip_code" => "4123", "barangays" => ["AMUYONG", "BARANGAY I (POB.)", "BARANGAY II (POB.)", "BARANGAY III (POB.)", "BARANGAY IV (POB.)", "BARANGAY V (POB.)", "BILOG", "BUCK ESTATE", "ESPERANZA IBABA", "ESPERANZA ILAYA", "KAYSUYO", "KAYTITINGA I", "KAYTITINGA II", "KAYTITINGA III", "LUKSUHIN", "LUKSUHIN ILAYA", "MANGAS I", "MANGAS II", "MARAHAN I", "MARAHAN II", "MATAGBAK I", "MATAGBAK II", "PAJO", "PALUMLUM", "SANTA TERESA", "SIKAT", "SINALIW MALAKI", "SINALIW NA MUNTI", "SULSUGIN", "TAYWANAK IBABA", "TAYWANAK ILAYA", "UPLI"]],
   ["province" => "CAVITE", "municipality" => "Amadeo", "zip_code" => "4119", "barangays" => ["BANAYBANAY", "BARANGAY I (POB.)", "BARANGAY II (POB.)", "BARANGAY III (POB.)", "BARANGAY IV (POB.)", "BARANGAY IX (POB.)", "BARANGAY V (POB.)", "BARANGAY VI (POB.)", "BARANGAY VII (POB.)", "BARANGAY VIII (POB.)", "BARANGAY X (POB.)", "BARANGAY XI (POB.)", "BARANGAY XII (POB.)", "BUCAL", "BUHO", "DAGATAN", "HALANG", "LOMA", "MAITIM I", "MAYMANGGA", "MINANTOK KANLURAN", "MINANTOK SILANGAN", "PANGIL", "SALABAN", "TALON", "TAMACAN"]],
@@ -61,11 +61,11 @@ return [
   ["province" => "CAVITE", "municipality" => "Ternate", "zip_code" => "4111", "barangays" => ["BUCANA", "POBLACION I (BARANGAY I)", "POBLACION I A", "POBLACION II (BARANGAY II)", "POBLACION III (BARANGAY III)", "SAN JOSE", "SAN JUAN I", "SAN JUAN II", "SAPANG I", "SAPANG II"]],
   ["province" => "CAVITE", "municipality" => "Trece Martirez City", "zip_code" => "4109", "barangays" => ["AGUADO (PISCAL MUNDO)", "CABEZAS", "CABUCO", "CONCHU (LAGUNDIAN)", "DE OCAMPO", "GREGORIO (ALIANG)", "INOCENCIO (B. POOK)", "LALLANA", "LAPIDARIO (BAYOG)", "LUCIANO (BITANGAN)", "OSORIO", "PEREZ (LUCBANAN)", "SAN AGUSTIN (POB.)"]],
 
-  ["province" => "CAVITE", "municipality" => "Cavite Naval Base", "zip_code" => "4101", "barangays" => []],
-  ["province" => "CAVITE", "municipality" => "Corregidor", "zip_code" => "4125", "barangays" => []],
-  ["province" => "CAVITE", "municipality" => "Dasmariñas Resettlement Area", "zip_code" => "4115", "barangays" => []],
-  ["province" => "CAVITE", "municipality" => "Molino", "zip_code" => "4135", "barangays" => []],
-  ["province" => "CAVITE", "municipality" => "1st Cavite IND. Estate", "zip_code" => "4126", "barangays" => []],
+  # ["province" => "CAVITE", "municipality" => "Cavite Naval Base", "zip_code" => "4101", "barangays" => []],
+  # ["province" => "CAVITE", "municipality" => "Corregidor", "zip_code" => "4125", "barangays" => []],
+  # ["province" => "CAVITE", "municipality" => "Dasmariñas Resettlement Area", "zip_code" => "4115", "barangays" => []],
+  # ["province" => "CAVITE", "municipality" => "Molino", "zip_code" => "4135", "barangays" => []],
+  # ["province" => "CAVITE", "municipality" => "1st Cavite IND. Estate", "zip_code" => "4126", "barangays" => []],
 
   ["province" => "LAGUNA", "municipality" => "Alaminos", "zip_code" => "4001", "barangays" => ["BARANGAY I (POB.)", "BARANGAY II (POB.)", "BARANGAY III (POB.)", "BARANGAY IV (POB.)", "DEL CARMEN", "PALMA", "SAN AGUSTIN", "SAN ANDRES", "SAN BENITO", "SAN GREGORIO", "SAN ILDEFONSO", "SAN JUAN", "SAN MIGUEL", "SAN ROQUE", "SANTA ROSA"]],
   ["province" => "LAGUNA", "municipality" => "Bay", "zip_code" => "4033", "barangays" => ["BITIN", "CALO", "DILA", "MAITIM", "MASAYA", "PACIANO RIZAL", "PUYPUY", "SAN AGUSTIN (POB.)", "SAN ANTONIO", "SAN ISIDRO", "SAN NICOLAS (POB.)", "SANTA CRUZ", "SANTO DOMINGO", "TAGUMPAY", "TRANCA"]],
@@ -98,11 +98,11 @@ return [
   ["province" => "LAGUNA", "municipality" => "Siniloan", "zip_code" => "4019", "barangays" => ["ACEVIDA", "BAGONG PAG-ASA (POB.)", "BAGUMBARANGAY (POB.)", "BUHAY", "G. REDOR (POB.)", "GEN. LUNA", "HALAYHAYIN", "J. RIZAL (POB.)", "KAPATALAN", "LAGUIO", "LIYANG", "LLAVAC", "MACATAD", "MAGSAYSAY", "MAYATBA", "MENDIOLA", "P. BURGOS", "PANDENO", "SALUBUNGAN", "WAWA"]],
   ["province" => "LAGUNA", "municipality" => "Victoria", "zip_code" => "4011", "barangays" => ["BANCA-BANCA", "DANIW", "MASAPANG", "NANHAYA (POB.)", "PAGALANGAN", "SAN BENITO", "SAN FELIX", "SAN FRANCISCO", "SAN ROQUE (POB.)"]],
 
-  ["province" => "LAGUNA", "municipality" => "Botocan", "zip_code" => "4006", "barangays" => []],
-  ["province" => "LAGUNA", "municipality" => "Canlubang", "zip_code" => "4028", "barangays" => []],
-  ["province" => "LAGUNA", "municipality" => "Camp Vicente Lim", "zip_code" => "4029", "barangays" => []],
-  ["province" => "LAGUNA", "municipality" => "College Los Baños", "zip_code" => "4031", "barangays" => []],
-  ["province" => "LAGUNA", "municipality" => "Laguna Technopark", "zip_code" => "4034", "barangays" => []],
+  # ["province" => "LAGUNA", "municipality" => "Botocan", "zip_code" => "4006", "barangays" => []],
+  # ["province" => "LAGUNA", "municipality" => "Canlubang", "zip_code" => "4028", "barangays" => []],
+  # ["province" => "LAGUNA", "municipality" => "Camp Vicente Lim", "zip_code" => "4029", "barangays" => []],
+  # ["province" => "LAGUNA", "municipality" => "College Los Baños", "zip_code" => "4031", "barangays" => []],
+  # ["province" => "LAGUNA", "municipality" => "Laguna Technopark", "zip_code" => "4034", "barangays" => []],
 
   ["province" => "QUEZON PROVINCE", "municipality" => "Agdangan", "zip_code" => "4304", "barangays" => ["BINAGBAG", "DAYAP", "IBABANG KINAGUNAN", "ILAYANG KINAGUNAN", "KANLURANG CALUTAN", "KANLURANG MALIGAYA", "POBLACION I", "POBLACION II", "SALVACION", "SILANGANG CALUTAN", "SILANGANG MALIGAYA", "SILDORA"]],
   ["province" => "QUEZON PROVINCE", "municipality" => "Alabat", "zip_code" => "4333", "barangays" => ["ANGELES", "BACONG", "BALUNGAY", "BARANGAY 1 (POB.)", "BARANGAY 2 (POB.)", "BARANGAY 3 (POB.)", "BARANGAY 4 (POB.)", "BARANGAY 5 (POB.)", "BUENAVISTA", "CAGLATE", "CAMAGONG", "GORDON", "PAMBILAN NORTE", "PAMBILAN SUR", "VILLA ESPERANZA", "VILLA JESUS ESTE", "VILLA JESUS WESTE", "VILLA NORTE", "VILLA VICTORIA"]],
@@ -146,8 +146,8 @@ return [
   ["province" => "QUEZON PROVINCE", "municipality" => "Tiaong", "zip_code" => "4325", "barangays" => ["ANASTACIA (TAGBAK)", "AQUINO", "AYUSAN I", "AYUSAN II", "BARANGAY I (POB.)", "BARANGAY II (POB.)", "BARANGAY III (POB.)", "BARANGAY IV (POB.)", "BEHIA", "BUKAL", "BULA", "BULAKIN", "CABATANG", "CABAY", "DEL ROSARIO", "LAGALAG", "LALIG", "LUMINGON", "LUSACAN", "PAIISA", "PALAGARAN", "QUIPOT", "SAN AGUSTIN", "SAN FRANCISCO", "SAN ISIDRO", "SAN JOSE", "SAN JUAN", "SAN PEDRO", "TAGBAKIN", "TALISAY", "TAMISIAN"]],
   ["province" => "QUEZON PROVINCE", "municipality" => "Unisan", "zip_code" => "4305", "barangays" => ["ALMACEN", "BALAGTAS", "BALANACAN", "BONIFACIO", "BULO IBABA", "BULO ILAYA", "BURGOS", "CABULIHAN IBABA", "CABULIHAN ILAYA", "CAIGDAL", "F. DE JESUS (POB.)", "GENERAL LUNA", "KALILAYAN IBABA", "KALILAYAN ILAYA", "MABINI", "MAIROK IBABA", "MAIROK ILAYA", "MALVAR", "MAPUTAT", "MULIGUIN", "PAGAGUASAN", "PANAON IBABA", "PANAON ILAYA", "PLARIDEL", "POCTOL", "PUNTA", "R. LAPU-LAPU (POB.)", "R. MAGSAYSAY (POB.)", "RAJA SOLIMAN (POB.)", "RIZAL IBABA", "RIZAL ILAYA", "SAN ROQUE", "SOCORRO", "TAGUMPAY", "TUBAS", "TUBIGAN"]],
 
-  ["province" => "QUEZON PROVINCE", "municipality" => "Hondagua", "zip_code" => "4317", "barangays" => []],
-  ["province" => "QUEZON PROVINCE", "municipality" => "Quezon (Capitol)", "zip_code" => "4300", "barangays" => []],
+  # ["province" => "QUEZON PROVINCE", "municipality" => "Hondagua", "zip_code" => "4317", "barangays" => []],
+  # ["province" => "QUEZON PROVINCE", "municipality" => "Quezon (Capitol)", "zip_code" => "4300", "barangays" => []],
 
   ["province" => "RIZAL PROVINCE", "municipality" => "Angono", "zip_code" => "1930", "barangays" => ["BAGUMBAYAN", "KALAYAAN", "MAHABANG PARANG", "POBLACION IBABA", "POBLACION ITAAS", "SAN ISIDRO", "SAN PEDRO", "SAN ROQUE", "SAN VICENTE", "SANTO NIÑO"]],
   ["province" => "RIZAL PROVINCE", "municipality" => "Antipolo", "zip_code" => "1870", "barangays" => ["BAGONG NAYON", "BEVERLY HILLS", "CALAWIS", "CUPANG", "DALIG", "DELA PAZ (POB.)", "INARAWAN", "MAMBUGAN", "MAYAMOT", "MUNTINGDILAW", "SAN ISIDRO (POB.)", "SAN JOSE (POB.)", "SAN JUAN", "SAN LUIS", "SAN ROQUE (POB.)", "SANTA CRUZ"]],
@@ -164,9 +164,9 @@ return [
   ["province" => "RIZAL PROVINCE", "municipality" => "Taytay", "zip_code" => "1920", "barangays" => ["DOLORES (POB.)", "MUZON", "SAN ISIDRO", "SAN JUAN", "SANTA ANA"]],
   ["province" => "RIZAL PROVINCE", "municipality" => "Teresa", "zip_code" => "1880", "barangays" => ["BAGUMBAYAN", "CALUMPANG SANTO CRISTO", "DALIG", "DULUMBAYAN", "MAY-IBA", "POBLACION", "PRINZA", "SAN GABRIEL", "SAN ROQUE"]],
 
-  ["province" => "RIZAL PROVINCE", "municipality" => "Bagong Nayon (Cogeo)", "zip_code" => "1872", "barangays" => []],
-  ["province" => "RIZAL PROVINCE", "municipality" => "Cupang", "zip_code" => "1873", "barangays" => []],
-  ["province" => "RIZAL PROVINCE", "municipality" => "Langhaya", "zip_code" => "1874", "barangays" => []],
-  ["province" => "RIZAL PROVINCE", "municipality" => "Mambagat", "zip_code" => "1875", "barangays" => []],
-  ["province" => "RIZAL PROVINCE", "municipality" => "Mayamot", "zip_code" => "1871", "barangays" => []],
+  # ["province" => "RIZAL PROVINCE", "municipality" => "Bagong Nayon (Cogeo)", "zip_code" => "1872", "barangays" => []],
+  # ["province" => "RIZAL PROVINCE", "municipality" => "Cupang", "zip_code" => "1873", "barangays" => []],
+  # ["province" => "RIZAL PROVINCE", "municipality" => "Langhaya", "zip_code" => "1874", "barangays" => []],
+  # ["province" => "RIZAL PROVINCE", "municipality" => "Mambagat", "zip_code" => "1875", "barangays" => []],
+  # ["province" => "RIZAL PROVINCE", "municipality" => "Mayamot", "zip_code" => "1871", "barangays" => []],
 ];

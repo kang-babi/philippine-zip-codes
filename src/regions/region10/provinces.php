@@ -23,8 +23,8 @@ return  [
   ["province" => "BUKIDNON", "municipality" => "Talakag", "zip_code" => "8708", "barangays" => ["BARANGAY 1 (POB.)", "BARANGAY 2 (POB.)", "BARANGAY 3 (POB.)", "BARANGAY 4 (POB.)", "BARANGAY 5 (POB.)", "BASAK", "BAYLANAN", "CACAON", "COLAWINGON", "COSINA", "DAGUMBAAN", "DAGUNDALAHON", "DOMINOROG", "INDULANG", "LANTUD", "LAPOK", "LIGURON", "LINGI-ON", "LIRONGAN", "MIARAYON", "SAGARAN", "SALUCOT", "SAN ANTONIO", "SAN ISIDRO", "SAN MIGUEL", "SAN RAFAEL", "SANTO NIÑO (LUMBAYAWA)", "TAGBAK", "TIKALAAN"]],
   ["province" => "BUKIDNON", "municipality" => "Valencia", "zip_code" => "8709", "barangays" => ["BAGONTAAS", "BANLAG", "BAROBO", "BATANGAN", "CATUMBALON", "COLONIA", "CONCEPCION", "DAGAT-KIDAVAO", "GUINOYURAN", "KAHAPUNAN", "LALIGAN", "LILINGAYON", "LOURDES", "LUMBAYAO", "LUMBO", "LUROGAN", "MAAPAG", "MABUHAY", "MAILAG", "MT. NEBO", "NABAGO", "PINATILAN", "POBLACION", "SAN CARLOS", "SAN ISIDRO", "SINABUAGAN", "SINAYAWAN", "SUGOD", "TONGANTONGAN", "TUGAYA", "VINTAR"]],
 
-  ["province" => "BUKIDNON", "municipality" => "Musuan", "zip_code" => "8710", "barangays" => []],
-  ["province" => "BUKIDNON", "municipality" => "Phillips", "zip_code" => "8705", "barangays" => []],
+  # ["province" => "BUKIDNON", "municipality" => "Musuan", "zip_code" => "8710", "barangays" => []],
+  # ["province" => "BUKIDNON", "municipality" => "Phillips", "zip_code" => "8705", "barangays" => []],
 
   ["province" => "CAMIGUIN", "municipality" => "Catarman", "zip_code" => "9104", "barangays" => ["ALGA", "BONBON", "BURA", "CATIBAC", "COMPOL", "LAWIGAN", "LILOAN", "LOOC", "MAINIT", "MANDUAO", "PANGHIAWAN", "POBLACION", "SANTO NIÑO", "TANGARO"]],
   ["province" => "CAMIGUIN", "municipality" => "Guinsiliban", "zip_code" => "9102", "barangays" => ["BUTAY", "CABUAN", "CANTAAN", "LIONG", "MAAC", "NORTH POBLACION", "SOUTH POBLACION"]],

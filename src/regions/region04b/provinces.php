@@ -19,7 +19,7 @@ return [
   ["province" => "OCCIDENTAL MINDORO", "municipality" => "San Jose", "zip_code" => "5100", "barangays" => ["AMBULONG", "ANSIRAY", "BAGONG SIKAT", "BANGKAL", "BARANGAY  1 (POB.)", "BARANGAY  2 (POB.)", "BARANGAY  3 (POB.)", "BARANGAY  4 (POB.)", "BARANGAY  5 (POB.)", "BARANGAY  6 (POB.)", "BARANGAY  7 (POB.)", "BARANGAY  8 (POB.)", "BATASAN", "BAYOTBOT", "BUBOG", "BURI", "CAMBURAY", "CAMINAWIT", "CATAYUNGAN", "CENTRAL", "ILING PROPER", "INASAKAN", "IPIL", "LA CURVA", "LABANGAN ILING", "LABANGAN POBLACION", "MABINI", "MAGBAY", "MANGARIN", "MAPAYA", "MONTE CLARO", "MURTHA", "NATANDOL", "PAG-ASA", "PAWICAN", "SAN AGUSTIN", "SAN ISIDRO", "SAN ROQUE"]],
   ["province" => "OCCIDENTAL MINDORO", "municipality" => "Sta. Cruz", "zip_code" => "5105", "barangays" => ["ALACAAK", "BARAHAN", "CASAGUE", "DAYAP", "KURTINGANAN", "LUMANGBAYAN", "MULAWIN", "PINAGTURILAN (SAN PEDRO)", "POBLACION I (BARANGAY 1)", "POBLACION II (BARANGAY 2)", "SAN VICENTE"]],
 
-  ["province" => "OCCIDENTAL MINDORO", "municipality" => "Tilik", "zip_code" => "5110", "barangays" => []],
+  # ["province" => "OCCIDENTAL MINDORO", "municipality" => "Tilik", "zip_code" => "5110", "barangays" => []],
 
   ["province" => "ORIENTAL MINDORO", "municipality" => "Baco", "zip_code" => "5201", "barangays" => ["ALAG", "BANGKATAN", "BARAS (MANGYAN MINORITY)", "BAYANAN", "BURBULI", "CATWIRAN I", "CATWIRAN II", "DULANGAN I", "DULANGAN II", "LANTUYANG (MANGYAN MINORITY)", "LUMANG BAYAN", "MALAPAD", "MANGANGAN I", "MANGANGAN II", "MAYABIG", "PAMBISAN", "POBLACION", "PULANG-TUBIG", "PUTICAN-CABULO", "SAN ANDRES", "SAN IGNACIO (DULANGAN III)", "SANTA CRUZ", "SANTA ROSA I", "SANTA ROSA II", "TABON-TABON", "TAGUMPAY", "WATER"]],
   ["province" => "ORIENTAL MINDORO", "municipality" => "Bansud", "zip_code" => "5210", "barangays" => ["ALCADESMA", "BATO", "CONRAZON", "MALO", "MANIHALA", "PAG-ASA", "POBLACION", "PROPER BANSUD", "PROPER TIGUISAN", "ROSACARA", "SALCEDO", "SUMAGUI", "VILLA PAG-ASA"]],
@@ -62,7 +62,7 @@ return [
   ["province" => "PALAWAN", "municipality" => "Sofronio Española", "zip_code" => "5324", "barangays" => ["ABO-ABO", "IRARAY", "ISUMBO", "LABOG", "PANITIAN", "PULOT CENTER", "PULOT INTERIOR (PULOT II)", "PULOT SHORE (PULOT I)", "PUNANG"]],
   ["province" => "PALAWAN", "municipality" => "Taytay", "zip_code" => "5312", "barangays" => ["ABONGAN", "ALACALIAN", "BANBANAN", "BANTULAN", "BARAS (PANGPANG)", "BATAS", "BATO", "BETON", "BUSY BEES", "CALAWAG", "CASIAN", "CATABAN", "DEBANGAN", "DEPLA", "LIBERTAD", "LIMINANGCONG", "MEYTEGUED", "MINAPLA", "NEW GUINLO", "OLD GUINLO", "PAGLAUM", "PALY (PALY ISLAND)", "PAMANTOLON", "PANCOL", "POBLACION", "PULARAQUEN (CANIQUE)", "SAN JOSE", "SANDOVAL", "SILANGA", "TALOG", "TUMBOD"]],
 
-  ["province" => "PALAWAN", "municipality" => "Iwahig Penal Colony", "zip_code" => "5301", "barangays" => []],
+  # ["province" => "PALAWAN", "municipality" => "Iwahig Penal Colony", "zip_code" => "5301", "barangays" => []],
 
   ["province" => "ROMBLON", "municipality" => "Alcantara", "zip_code" => "5509", "barangays" => ["BAGSIK", "BONLAO", "CALAGONSAO", "CAMILI", "CAMOD-OM", "GUI-OB", "LAWAN", "MADALAG", "POBLACION", "SAN ISIDRO", "SAN ROQUE", "TUGDAN"]],
   ["province" => "ROMBLON", "municipality" => "Banton (Jones)", "zip_code" => "5515", "barangays" => ["BALOGO", "BANICE", "HAMBI-AN", "LAGANG", "LIBTONG", "MAINIT", "NABALAY", "NASUNOGAN", "POBLACION", "SIBAY", "TAN-AG", "TOCTOC", "TOGBONGAN", "TOGONG", "TUMALUM", "TUNGONAN", "YABAWON"]],

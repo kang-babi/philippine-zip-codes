@@ -1,16 +1,5 @@
 <?php
 
-/**
- * This file is for the zip codes of NCR, barangays are not included.
- * The [province] key is for mapping purposes with provinces[province].
- * provinces[municipality] can have multiple zip codes.
- * [city] and [municipality] are separator keys for the zip codes.
- * Exception: [city] = "Manila" is a 'province' in this context.
- * If you need the barangays, you can check the provinces.php file.
- *
- * TLDR: a single [city] can have multiple [municipality = zip codes]
- */
-
 return [
   ["province" => "MANILA", "city" => "MANILA", "municipality" => "Binondo", "zip_code" => "1006"],
   ["province" => "MANILA", "city" => "MANILA", "municipality" => "Intramuros", "zip_code" => "1002"],

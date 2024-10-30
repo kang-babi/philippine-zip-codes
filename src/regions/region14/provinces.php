@@ -43,8 +43,8 @@ return  [
   ["province" => "BENGUET", "municipality" => "Tuba", "zip_code" => "2603", "barangays" => ["ANSAGAN", "CAMP  3", "CAMP  4", "CAMP ONE", "NANGALISAN", "POBLACION", "SAN PASCUAL", "TABAAN NORTE", "TABAAN SUR", "TADIANGAN", "TALOY NORTE", "TALOY SUR", "TWIN PEAKS"]],
   ["province" => "BENGUET", "municipality" => "Tublay", "zip_code" => "2615", "barangays" => ["AMBASSADOR", "AMBONGDOLAN", "BA-AYAN", "BASIL", "CAPONGA (POB.)", "DACLAN", "TUBLAY CENTRAL", "TUEL"]],
 
-  ["province" => "BENGUET", "municipality" => "Lepanto", "zip_code" => "2609", "barangays" => []],
-  ["province" => "BENGUET", "municipality" => "Philippine Military Academy (PMA)", "zip_code" => "2602", "barangays" => []],
+  # ["province" => "BENGUET", "municipality" => "Lepanto", "zip_code" => "2609", "barangays" => []],
+  # ["province" => "BENGUET", "municipality" => "Philippine Military Academy (PMA)", "zip_code" => "2602", "barangays" => []],
 
   ["province" => "IFUGAO", "municipality" => "Aguinaldo", "zip_code" => "3606", "barangays" => ["AWAYAN", "BUNHIAN", "BUTAC", "BUWAG", "CHALALO", "DAMAG", "GALONOGON", "HALAG", "ITAB", "JACMAL", "MAJLONG", "MONGAYANG", "POSNAAN", "TA-ANG", "TALITE", "UBAO"]],
   ["province" => "IFUGAO", "municipality" => "Alfonso Lista (formerly Potia)", "zip_code" => "3608", "barangays" => ["BANGAR", "BUSILAC", "CALIMAG", "CALUPAAN", "CARAGASAN", "DOLOWOG", "KILING", "LAYA", "LITTLE TADIAN", "NAMILLANGAN", "NAMNAMA", "NGILEB", "PINTO", "POBLACION", "SAN JOSE", "SAN JUAN", "SAN MARCOS", "SAN QUINTIN", "SANTA MARIA", "SANTO DOMINGO (CABICALAN)"]],

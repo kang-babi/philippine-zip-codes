@@ -33,7 +33,8 @@ class PhAddress extends Collection
       include __DIR__ . '/regions/region13/data.php',
       include __DIR__ . '/regions/region14/data.php',
       include __DIR__ . '/regions/region15/data.php',
-      static::mapNCRValues()
+      include __DIR__ . '/regions/regionncr/data.php',
+      # static::mapNCRValues()
     ];
 
     # recursively set all values to uppercase
@@ -51,6 +52,17 @@ class PhAddress extends Collection
 
         return $province;
       }, $region['provinces']);
+
+      // if (in_array('zip_data', array_keys($region))) {
+      //   $region['zip_data'] = array_map(
+      //     function ($zip) use ($region) {
+      //       $zip['region'] = $region;
+
+      //       return $zip;
+      //     },
+      //     $region['zip_data']
+      //   );
+      // }
 
       return $region;
     }, $data);
@@ -102,9 +114,9 @@ class PhAddress extends Collection
         return collect($region['provinces'])->map(function ($province) use ($region) {
           $barangays = isset($province['barangays']) ? $province['barangays'] : [];
 
-          [$key, $data] = $region['region'] === 'NCR' ?
-            ['zip_codes', $province['zip_codes'] ?? []] :
-            ['zip_code', $province['zip_code'] ?? []];
+          # [$key, $data] = $region['region'] === 'NCR' ?
+          #   ['zip_codes', $province['zip_codes'] ?? []] :
+          #   ['zip_code', $province['zip_code'] ?? []];
 
           return collect([
             'region' => $region['region'],
@@ -118,12 +130,11 @@ class PhAddress extends Collection
               $province['municipality']
             ])),
             'barangays' => collect($barangays)->sort(),
-            $key => $data,
+            # $key => $data,
           ]);
         });
       })
-      ->collapse()
-      ->reverse();
+      ->collapse();
 
     return new static($flatData);
   }
@@ -187,7 +198,7 @@ class PhAddress extends Collection
     }
 
     static::$container = static::load()
-      ->filter(fn($r) => _($r['region']) === _($region));
+      ->filter(fn($r) => in_array(_($region), [_($r['region']), _($r['region_alt']), _($r['name'])]));
 
     return new static(static::$container);
   }
@@ -206,7 +217,11 @@ class PhAddress extends Collection
     static::$container = static::$container ? static::$container
       ->map(fn($r) => $r['provinces'])
       ->collapse()
-      ->filter(fn($r) => _($r['province']) === _($province)) : [];
+      ->filter(
+        fn($r) =>
+        _($r['province']) === _($province)
+          && !empty($r['barangays'])
+      ) : [];
 
     return new static(static::$container);
   }

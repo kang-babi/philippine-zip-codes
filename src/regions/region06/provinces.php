@@ -139,6 +139,6 @@ return  [
   ["province" => "NEGROS OCCIDENTAL", "municipality" => "Valladolid", "zip_code" => "6103", "barangays" => ["ALIJIS", "AYUNGON", "BAGUMBAYAN", "BATUAN", "BAYABAS", "CENTRAL TABAO", "DOLDOL", "GUINTORILAN", "LACARON", "MABINI", "PACOL", "PALAKA", "PALOMA", "POBLACION", "SAGUA BANUA", "TABAO PROPER"]],
   ["province" => "NEGROS OCCIDENTAL", "municipality" => "Victorias", "zip_code" => "6119", "barangays" => ["BARANGAY I (POB.)", "BARANGAY II (POB.)", "BARANGAY III (POB.)", "BARANGAY IV (POB.)", "BARANGAY IX (DAAN BANWA)", "BARANGAY V (POB.)", "BARANGAY VI (POB.)", "BARANGAY VI-A", "BARANGAY VII (POB.)", "BARANGAY VIII (POB.)", "BARANGAY X (ESTADO)", "BARANGAY XI (GAWAHON)", "BARANGAY XII", "BARANGAY XIII", "BARANGAY XIV", "BARANGAY XIX", "BARANGAY XIX-A", "BARANGAY XV", "BARANGAY XV-A", "BARANGAY XVI", "BARANGAY XVI-A", "BARANGAY XVII", "BARANGAY XVIII", "BARANGAY XVIII-A", "BARANGAY XX", "BARANGAY XXI"]],
 
-  ["province" => "NEGROS OCCIDENTAL", "municipality" => "Paraiso (Fabrica)", "zip_code" => "6123", "barangays" => []],
-  ["province" => "NEGROS OCCIDENTAL", "municipality" => "Silay Hawaiian Central", "zip_code" => "6117", "barangays" => []],
+  # ["province" => "NEGROS OCCIDENTAL", "municipality" => "Paraiso (Fabrica)", "zip_code" => "6123", "barangays" => []],
+  # ["province" => "NEGROS OCCIDENTAL", "municipality" => "Silay Hawaiian Central", "zip_code" => "6117", "barangays" => []],
 ];

@@ -4,4 +4,5 @@ return [
   'region_alt' => 'REGION V',
   'name' => 'BICOL REGION',
   'provinces' => include __DIR__ . '/provinces.php',
+  'zip_data' => include __DIR__ . '/zip_data.php',
 ];

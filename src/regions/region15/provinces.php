@@ -56,7 +56,7 @@ return  [
   ["province" => "LANAO DEL SUR", "municipality" => "Tugaya", "zip_code" => "9317", "barangays" => ["BAGOAINGUD", "BUADI ALAWANG", "BUADI DICO", "BUBONG", "CAMPONG TALAO", "CAYAGAN", "DANDANUN", "DILIMBAYAN", "GURAIN", "LUMBAC", "MAIDAN", "MAPANTAO", "PAGALAMATAN", "PANDIARANAO", "PINDOLONAN I", "PINDOLONAN II", "POBLACION (INGUD)", "PUTAD", "RAYA", "SUGOD I", "SUGOD MAWATAN", "SUMBAGA ROGONG", "TANGCAL"]],
   ["province" => "LANAO DEL SUR", "municipality" => "Wao", "zip_code" => "9716", "barangays" => ["AMOYONG", "BALATIN", "BANGA", "BO-OT", "BUNTONGUN", "CEBUANO GROUP", "CHRISTIAN VILLAGE", "EASTERN WAO", "EXTENSION POBLACION", "GATA", "KABATANGAN", "KADINGILAN", "KATUTUNGAN (POB.)", "KILIKILI EAST", "KILIKILI WEST", "MALAIGANG", "MANILA GROUP", "MILAYA", "MIMBUAYA", "MUSLIM VILLAGE", "PAGALONGAN", "PANANG", "PARK AREA (POB.)", "PILINTANGAN", "SERRAN VILLAGE", "WESTERN WAO (POB.)"]],
 
-  ["province" => "LANAO DEL SUR", "municipality" => "Macador Andong", "zip_code" => "9308", "barangays" => []],
+  # ["province" => "LANAO DEL SUR", "municipality" => "Macador Andong", "zip_code" => "9308", "barangays" => []],
 
   ["province" => "MAGUINDANAO", "municipality" => "Ampatuan", "zip_code" => "9609", "barangays" => ["DICALONGAN (POB.)", "KAKAL", "KAMASI", "KAPINPILAN", "KAURAN", "MALATIMON", "MATAGABONG", "SALMAN", "SANIAG", "TOMICOR", "TUBAK"]],
   ["province" => "MAGUINDANAO", "municipality" => "Barira", "zip_code" => "9614", "barangays" => ["BARIRA (POB.)", "BUALAN", "GADUNG", "KOROSOYAN", "LAMIN", "LIONG", "LIPA", "LIPAWAN", "MARANG", "MINABAY", "NABALAWAG", "PANGGAO", "ROMINIMBANG", "TOGAIG"]],

@@ -79,5 +79,5 @@ return  [
   ["province" => "SURIGAO DEL SUR", "municipality" => "Tago", "zip_code" => "8302", "barangays" => ["ALBA", "ANAHAO BAG-O", "ANAHAO DAAN", "BADONG", "BAJAO", "BANGSUD", "CABANGAHAN", "CAGDAPAO", "CAMAGONG", "CARAS-AN", "CAYALE", "DAYO-AN", "GAMUT", "JUBANG", "KINABIGTASAN", "LAYOG", "LINDOY", "MERCEDES", "PURISIMA (POB.)", "SUMO-SUMO", "UMBAY", "UNABAN", "UNIDOS", "VICTORIA"]],
   ["province" => "SURIGAO DEL SUR", "municipality" => "Tandag", "zip_code" => "8300", "barangays" => ["AWASIAN", "BAGONG LUNGSOD (POB.)", "BIOTO", "BONGTOD POB. (EAST WEST)", "BUENAVISTA", "DAGOCDOC (POB.)", "MABUA", "MABUHAY", "MAITUM", "MATICDUM", "PANDANON", "PANGI", "QUEZON", "ROSARIO", "SALVACION", "SAN AGUSTIN NORTE", "SAN AGUSTIN SUR", "SAN ANTONIO", "SAN ISIDRO", "SAN JOSE", "TELAJE"]],
 
-  ["province" => "SURIGAO DEL SUR", "municipality" => "Malixi", "zip_code" => "8319", "barangays" => []],
+  # ["province" => "SURIGAO DEL SUR", "municipality" => "Malixi", "zip_code" => "8319", "barangays" => []],
 ];

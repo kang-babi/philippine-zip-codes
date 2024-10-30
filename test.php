@@ -12,6 +12,6 @@ function __print($data)
   echo '</pre>';
 }
 
-$data = PhAddress::data();
-
-__print($data);
+__print(
+  PhAddress::data()->pluck('zip_data')
+);
