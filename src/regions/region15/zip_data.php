@@ -50,7 +50,7 @@ return [
   ["province" => "LANAO DEL SUR", "municipality" => "SAGUIARAN", "zip_code" => "9701"],
   ["province" => "LANAO DEL SUR", "municipality" => "SULTAN DOMALONDONG", "zip_code" => "9324"],
   ["province" => "LANAO DEL SUR", "municipality" => "SULTAN GUMANDER", "zip_code" => "9301"],
-  ["province" => "LANAO DEL SUR", "municipality" => "TAGOLOAN - II", "zip_code" => "9321"],
+  ["province" => "LANAO DEL SUR", "municipality" => "TAGOLOAN II", "zip_code" => "9321"],
   ["province" => "LANAO DEL SUR", "municipality" => "TAMPARAN", "zip_code" => "9704"],
   ["province" => "LANAO DEL SUR", "municipality" => "TARAKA", "zip_code" => "9712"],
   ["province" => "LANAO DEL SUR", "municipality" => "TUBARAN", "zip_code" => "9304"],
