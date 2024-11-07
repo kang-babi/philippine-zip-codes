@@ -56,7 +56,7 @@ return [
   ["province" => "ISABELA", "municipality" => "LUNA", "zip_code" => "3304"],
   ["province" => "ISABELA", "municipality" => "MACONACON", "zip_code" => "3333"],
   ["province" => "ISABELA", "municipality" => "MALLIG", "zip_code" => "3323"],
-  ["province" => "ISABELA", "municipality" => "NAGUILLAN", "zip_code" => "3302"],
+  ["province" => "ISABELA", "municipality" => "NAGUILIAN", "zip_code" => "3302"],
   ["province" => "ISABELA", "municipality" => "PALANAN", "zip_code" => "3334"],
   ["province" => "ISABELA", "municipality" => "QUEZON", "zip_code" => "3324"],
   ["province" => "ISABELA", "municipality" => "QUIRINO", "zip_code" => "3321"],
