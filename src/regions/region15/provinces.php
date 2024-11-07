@@ -57,6 +57,7 @@ return  [
   ["province" => "LANAO DEL SUR", "municipality" => "Wao", "zip_code" => "9716", "barangays" => ["AMOYONG", "BALATIN", "BANGA", "BO-OT", "BUNTONGUN", "CEBUANO GROUP", "CHRISTIAN VILLAGE", "EASTERN WAO", "EXTENSION POBLACION", "GATA", "KABATANGAN", "KADINGILAN", "KATUTUNGAN (POB.)", "KILIKILI EAST", "KILIKILI WEST", "MALAIGANG", "MANILA GROUP", "MILAYA", "MIMBUAYA", "MUSLIM VILLAGE", "PAGALONGAN", "PANANG", "PARK AREA (POB.)", "PILINTANGAN", "SERRAN VILLAGE", "WESTERN WAO (POB.)"]],
 
   ["province" => "LANAO DEL SUR", "municipality" => "Tagoloan II", "zip_code" => "9321", "barangays" => ["Bagoaingud", "Bantalan", "Bayog", "Cadayonan", "Dagonalan", "Dimalama", "Gayakay", "Inodaran", "Kalilangan", "Kianibong", "Kingan", "Kitaon", "Maimbaguiang", "Malinao", "Malingon", "Mama-an Pagalongan", "Marawi", "Sigayan", "Tagoloan Poblacion",]],
+  ["province" => "LANAO DEL SUR", "municipality" => "Maguing", "zip_code" => "9715", "barangays" => ["Agagan", "Balagunun", "Balawag", "Balintao", "Bato-bato", "Bolao", "Borocot", "Borrowa", "Botud", "Buadiangkay", "Bubong", "Bubong Bayabao", "Camalig", "Cambong", "Dilausan", "Dilimbayan", "Ilalag", "Kianodan", "Lilod Borocot", "Lilod Maguing", "Lumbac", "Lumbac-Dimarao", "Madanding", "Madaya", "Maguing Proper", "Malungun", "Malungun Borocot", "Malungun Pagalongan", "Pagalongan", "Panayangan", "Pilimoknan", "Pindolonan", "Ragayan", "Sabala Dilausan",]],
 
   # ["province" => "LANAO DEL SUR", "municipality" => "Macador Andong", "zip_code" => "9308", "barangays" => []],
 
