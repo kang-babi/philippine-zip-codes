@@ -6,7 +6,7 @@ use Illuminate\Support\Collection;
 
 function _($string)
 {
-  return strtoupper($string);
+  return mb_strtoupper($string);
 }
 
 class PhAddress extends Collection
@@ -39,7 +39,7 @@ class PhAddress extends Collection
 
     # recursively set all values to uppercase
     array_walk_recursive($data, function (&$value) {
-      $value = strtoupper($value);
+      $value = mb_strtoupper($value);
     });
 
     $data = array_map(function ($region) {

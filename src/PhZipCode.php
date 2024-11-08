@@ -4,7 +4,7 @@ namespace KangBabi\PhZipCodes;
 
 function u($string)
 {
-  return strtoupper($string);
+  return mb_strtoupper($string);
 }
 
 class PhZipCode
