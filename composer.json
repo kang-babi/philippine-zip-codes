@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "illuminate/collections": ">=11.28.1"
+        "illuminate/collections": "^11.28.1 || ^12.0"
     }
 }
