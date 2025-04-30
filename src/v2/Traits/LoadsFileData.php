@@ -10,7 +10,7 @@ trait LoadsFileData
 {
     protected static array $addresses = [];
 
-    public function __construct()
+    private function __construct()
     {
         $regions = glob(__DIR__ . '/../../regions/*');
 
