@@ -12,8 +12,7 @@ trait LoadsFileData
 
     private function __construct()
     {
-        $regions = glob(__DIR__ . '/../../regions/*');
-
+        $regions = glob(__DIR__ . '/../regions/*');
 
         foreach ($regions as $file) {
             $region = "{$file}/data.php";
@@ -29,11 +28,6 @@ trait LoadsFileData
         }
     }
 
-    protected function fromFile(array $contents): void
-    {
-        static::$addresses[$contents['region']] = static::collect($contents);
-    }
-
     protected static function collect(array $contents): Collection
     {
         // todo: map zip codes per province
@@ -47,8 +41,13 @@ trait LoadsFileData
 
         unset($contents['zip_data']);
 
-        $wrapped = array_map(fn($key): mixed => is_array($key) ? Collection::make($key) : $key, $contents);
+        $wrapped = array_map(fn ($key): mixed => is_array($key) ? Collection::make($key) : $key, $contents);
 
         return Collection::make($wrapped);
+    }
+
+    protected function fromFile(array $contents): void
+    {
+        static::$addresses[$contents['region']] = static::collect($contents);
     }
 }
