@@ -26,4 +26,14 @@ enum Address: string
       default => 'zip_data',
     };
   }
+
+  public function address(): array
+  {
+    return match ($this) {
+      self::PROVINCE => ['region'],
+      self::MUNICIPALITY => ['region', 'province'],
+      self::BARANGAY => ['region', 'province', 'municipality'],
+      default => [],
+    };
+  }
 }

@@ -36,6 +36,15 @@ trait LoadsFileData
 
     protected static function collect(array $contents): Collection
     {
+        // todo: map zip codes per province
+        /**
+         * 'province' => [
+         *    'name' => '...',
+         *    'zip_codes' => [..],
+         *    'municipalities' => [..],
+         * ]
+         */
+
         unset($contents['zip_data']);
 
         $wrapped = array_map(fn($key): mixed => is_array($key) ? Collection::make($key) : $key, $contents);
