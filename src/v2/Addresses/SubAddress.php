@@ -18,18 +18,18 @@ class SubAddress
   ) {
     // Remove the address from the contents if not included
     if (! $this->include) {
-      $this->container->except($this->address->subAddress());
+      $this->container->except($this->address->component());
     }
 
     // Remove the zip code if the address is region
     if ($this->address === Address::REGION) {
-      $this->container->except(Address::ZIP_CODE->subAddress());
+      $this->container->except(Address::ZIP_CODE->component());
     }
   }
 
-  public function subAddresses(): Collection
+  public function subunits(): Collection
   {
-    return $this->container->get($this->address->subAddress());
+    return $this->container->get($this->address->component());
   }
 
   /**
