@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'region' => 'NCR',
     'region_alt' => 'NCR',

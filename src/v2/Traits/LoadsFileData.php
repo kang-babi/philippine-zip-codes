@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KangBabi\PhZipCodes\v2\Traits;
 
-use Illuminate\Support\Collection;
+use KangBabi\PhZipCodes\v2\Components\Region;
 
 trait LoadsFileData
 {
@@ -28,26 +28,10 @@ trait LoadsFileData
         }
     }
 
-    protected static function collect(array $contents): Collection
-    {
-        // todo: map zip codes per province
-        /**
-         * 'province' => [
-         *    'name' => '...',
-         *    'zip_codes' => [..],
-         *    'municipalities' => [..],
-         * ]
-         */
-
-        unset($contents['zip_data']);
-
-        $wrapped = array_map(fn ($key): mixed => is_array($key) ? Collection::make($key) : $key, $contents);
-
-        return Collection::make($wrapped);
-    }
-
     protected function fromFile(array $contents): void
     {
-        static::$addresses[$contents['region']] = static::collect($contents);
+        $region = Region::make($contents['name'], $contents['region'], $contents['region_alt'], $contents['provinces']);
+
+        static::$addresses[$contents['region']] = $region;
     }
 }

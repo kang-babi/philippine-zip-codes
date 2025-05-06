@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'region' => 'REGION 1',
     'region_alt' => 'REGION I',
