@@ -5,9 +5,9 @@ declare(strict_types=1);
 return [
     [
         'province' => 'MANILA',
-        'cities' => [
+        'municipalities' => [
             [
-                'city' => 'MANILA',
+                'municipality' => 'MANILA',
                 'zip_codes' => [
                     ['location' => 'BINONDO', 'zip_code' => '1006'],
                     ['location' => 'INTRAMUROS', 'zip_code' => '1002'],
@@ -35,9 +35,9 @@ return [
 
     [
         'province' => 'SECOND DISTRICT',
-        'cities' => [
+        'municipalities' => [
             [
-                'city' => 'MANDALUYONG CITY',
+                'municipality' => 'MANDALUYONG CITY',
                 'zip_codes' => [
                     ['location' => 'East Edsa', 'zip_code' => '1554'],
                     ['location' => 'Greenhills South', 'zip_code' => '1556'],
@@ -49,7 +49,7 @@ return [
                 ],
             ],
             [
-                'city' => 'MARIKINA CITY',
+                'municipality' => 'MARIKINA CITY',
                 'zip_codes' => [
                     ['location' => 'BARANGKA', 'zip_code' => '1803'],
                     ['location' => 'CONCEPCION 1', 'zip_code' => '1807'],
@@ -68,7 +68,7 @@ return [
                 ],
             ],
             [
-                'city' => 'PASIG CITY',
+                'municipality' => 'PASIG CITY',
                 'zip_codes' => [
                     ['location' => 'CANIOGAN', 'zip_code' => '1606'],
                     ['location' => 'GREEN PARK', 'zip_code' => '1612'],
@@ -86,7 +86,7 @@ return [
                 ],
             ],
             [
-                'city' => 'QUEZON CITY',
+                'municipality' => 'QUEZON CITY',
                 'zip_codes' => [
                     ['location' => 'ALICIA', 'zip_code' => '1105'],
                     ['location' => 'AMIHAN', 'zip_code' => '1102'],
@@ -237,7 +237,7 @@ return [
                 ],
             ],
             [
-                'city' => 'SAN JUAN CITY',
+                'municipality' => 'SAN JUAN CITY',
                 'zip_codes' => [
                     ['location' => 'EISENHOWER-CRAME', 'zip_code' => '1504'],
                     ['location' => 'GREENHILLS NORTH', 'zip_code' => '1503'],
@@ -250,9 +250,9 @@ return [
 
     [
         'province' => 'THIRD DISTRICT',
-        'cities' => [
+        'municipalities' => [
             [
-                'city' => 'CALOOCAN CITY',
+                'municipality' => 'CALOOCAN CITY',
                 'zip_codes' => [
                     ['location' => 'AMPARO SUBDIVISION', 'zip_code' => '1425'],
                     ['location' => 'BAGONG SILANG', 'zip_code' => '1428'],
@@ -282,7 +282,7 @@ return [
             ],
 
             [
-                'city' => 'MALABON CITY',
+                'municipality' => 'MALABON CITY',
                 'zip_codes' => [
                     ['location' => 'ACACIA', 'zip_code' => '1474'],
                     ['location' => 'ARANETA SUBDIVISION', 'zip_code' => '1476'],
@@ -300,7 +300,7 @@ return [
             ],
 
             [
-                'city' => 'NAVOTAS CITY',
+                'municipality' => 'NAVOTAS CITY',
                 'zip_codes' => [
                     ['location' => 'FISH MARKET', 'zip_code' => '1411'],
                     ['location' => 'ISLA DE COCOMO', 'zip_code' => '1412'],
@@ -313,7 +313,7 @@ return [
             ],
 
             [
-                'city' => 'VALENZUELA CITY',
+                'municipality' => 'VALENZUELA CITY',
                 'zip_codes' => [
                     ['location' => 'ARKONG BATO-RINCON-PASOLO-MALANDAY-MABOLO-POLO', 'zip_code' => '1444'],
                     ['location' => 'BALANGKAS-CALOONG', 'zip_code' => '1445'],
@@ -332,9 +332,9 @@ return [
 
     [
         'province' => 'FOURTH DISTRICT',
-        'cities' => [
+        'municipalities' => [
             [
-                'city' => 'LAS PIÑAS CITY',
+                'municipality' => 'LAS PIÑAS CITY',
                 'zip_codes' => [
                     ['location' => 'ALMANZA', 'zip_code' => '1750'],
                     ['location' => 'ANGELA VILLAGE', 'zip_code' => '1749'],
@@ -354,7 +354,7 @@ return [
             ],
 
             [
-                'city' => 'MAKATI CITY',
+                'municipality' => 'MAKATI CITY',
                 'zip_codes' => [
                     ['location' => 'AYALA-PASEO DE ROXAS', 'zip_code' => '1226'],
                     ['location' => 'BANGKAL', 'zip_code' => '1233'],
@@ -396,7 +396,7 @@ return [
             ],
 
             [
-                'city' => 'MUNTINLUPA CITY',
+                'municipality' => 'MUNTINLUPA CITY',
                 'zip_codes' => [
                     ['location' => 'AYALA ALABANG P.O. BOXES', 'zip_code' => '1799'],
                     ['location' => 'AYALA ALABANG SUBDIVISION', 'zip_code' => '1780'],
@@ -413,7 +413,7 @@ return [
             ],
 
             [
-                'city' => 'PARAÑAQUE CITY',
+                'municipality' => 'PARAÑAQUE CITY',
                 'zip_codes' => [
                     ['location' => 'AEROPARK SUBDIVISION', 'zip_code' => '1714'],
                     ['location' => 'BACLARAN', 'zip_code' => '1702'],
@@ -444,7 +444,7 @@ return [
             ],
 
             [
-                'city' => 'PASAY CITY',
+                'municipality' => 'PASAY CITY',
                 'zip_codes' => [
                     ['location' => 'DOMESTIC AIRPORT PO', 'zip_code' => '1301'],
                     ['location' => 'MANILA BAY (RECLAMATION)', 'zip_code' => '1308'],
@@ -463,9 +463,9 @@ return [
 
     [
         'province' => 'TAGUIG-PATEROS',
-        'cities' => [
+        'municipalities' => [
             [
-                'city' => 'PATEROS',
+                'municipality' => 'PATEROS',
                 'zip_codes' => [
                     ['location' => 'AGUHO', 'zip_code' => '1620'],
                     ['location' => 'STA. ANA', 'zip_code' => '1621'],
@@ -473,7 +473,7 @@ return [
             ],
 
             [
-                'city' => 'TAGUIG CITY',
+                'municipality' => 'TAGUIG CITY',
                 'zip_codes' => [
                     ['location' => 'BAY BREEZE EXEC. VILLAGE', 'zip_code' => '1636'],
                     ['location' => 'BICUTAN', 'zip_code' => '1631'],
