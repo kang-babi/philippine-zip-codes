@@ -18,12 +18,7 @@ class SubAddress
     ) {
         // Remove the address from the contents if not included
         if (! $this->include) {
-            $this->container->except($this->address->component());
-        }
-
-        // Remove the zip code if the address is region
-        if ($this->address === Address::REGION) {
-            $this->container->except(Address::ZIP_CODE->component());
+            $this->container->except($this->address->components());
         }
     }
 
@@ -42,7 +37,7 @@ class SubAddress
 
     public function subunits(): Collection
     {
-        return $this->container->get($this->address->component());
+        return $this->container->get($this->address->components());
     }
 
     /**
@@ -65,9 +60,9 @@ class SubAddress
         $provinces = $provinces
             ->when(
                 !$barangays,
-                fn (Collection $province): Collection => collect($province)->except(['barangays'])
+                fn(Collection $province): Collection => collect($province)->except(['barangays'])
             )
-            ->map(fn (array $province): array => collect($province)->except(['zip_code'])->toArray());
+            ->map(fn(array $province): array => collect($province)->except(['zip_code'])->toArray());
 
         return self::make($provinces, Address::PROVINCE);
     }
@@ -77,7 +72,7 @@ class SubAddress
         $municipalities = Collection::make($this->container->get('municipalities', []));
 
         if (!$barangays) {
-            $municipalities = $municipalities->map(fn ($municipality) => collect($municipality)->except(['barangays'])->toArray());
+            $municipalities = $municipalities->map(fn($municipality) => collect($municipality)->except(['barangays'])->toArray());
         }
 
         return self::make($municipalities, Address::MUNICIPALITY);

@@ -29,7 +29,7 @@ class PhAddress
     public static function regions(bool $provinces = false): Collection
     {
         return Collection::make(static::$addresses)
-            ->map(fn ($region): SubAddress => SubAddress::make($region, Address::REGION, $provinces));
+            ->map(fn($region): SubAddress => SubAddress::make($region, Address::REGION, $provinces));
     }
 
     /**
@@ -47,12 +47,12 @@ class PhAddress
     /**
      * Check if the address belongs to the given Address.
      */
-    protected static function belongsTo(Collection $address, string $Address): bool
+    protected static function belongsTo(Collection $addresses, string $address): bool
     {
         return
-          $address->get('region') === $Address ||
-          $address->get('region_alt') === $Address ||
-          $address->get('name') === $Address;
+            $addresses->get('region') === $address ||
+            $addresses->get('region_alt') === $address ||
+            $addresses->get('name') === $address;
     }
 
     /**
@@ -64,7 +64,7 @@ class PhAddress
     {
         $region = mb_strtoupper($region);
 
-        $region = array_filter(static::$addresses, fn ($address) => static::belongsTo($address, $region));
+        $region = array_filter(static::$addresses, fn($address) => static::belongsTo($address, $region));
 
         return $region[0] ?? [];
     }
